@@ -1,5 +1,6 @@
 package com.project.marketing.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -23,5 +24,6 @@ public class PDEntity {
     private String supplier;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private int id;
 }
